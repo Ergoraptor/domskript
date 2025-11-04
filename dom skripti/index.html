@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO DO-lista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TO DO-lista</h1>
+
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Kirjoita tehtävä..." required>
+      <button type="submit">Lisää</button>
+    </form>
+
+    <p id="error-message"></p>
+
+    <div class="filters">
+      <button id="show-all" class="active">Kaikki</button>
+      <button id="show-active">Kesken</button>
+      <button id="show-done">Valmiit</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+
+    <p id="counter"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
